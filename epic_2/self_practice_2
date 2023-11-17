@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    long q1, q2, q3, q4, q5;
+    cin >> q1;
+    cin >> q2;
+    cin >> q3;
+    cin >> q4;
+    cin >> q5;
+    if (q1 < q2 or q2 < q3 or q3 < q4 or q4 < q5)
+    {
+        cout << ("LOSS\n");
+    }
+    else if (q1 <= 0 or q2 <= 0 or q3 <= 0 or q4 <= 0 or q5 <= 0)
+    {
+        cout << ("ERROR\n");
+    }
+    else
+    {
+        cout << ("WIN\n");
+    }
+    return (0);
+}
